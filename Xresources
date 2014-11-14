@@ -1,0 +1,16 @@
+URxvt*loginShell: true
+URxvt*background: Grey25
+URxvt*foreground: Grey
+
+! Copy-Paste
+URxvt*keysym.Shift-Control-V: perl:clipboard:paste
+URxvt*iso14755: false
+URxvt*perl-ext-common: default,clipboard
+
+! Transparency
+URxvt*transparent: true
+URxvt*shading: 15
+
+! Scrollbar
+URxvt*scrollstyle: xterm
+URxvt*scrollBar_right: true

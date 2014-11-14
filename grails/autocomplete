@@ -1,0 +1,28 @@
+_grailsscriptdirs() {
+    local SCRIPT_DIRS="$GRAILS_HOME/scripts"
+    if [ -d plugins ]
+        then for PLUGIN_DIR in $(ls -d plugins/*/scripts); do
+        SCRIPT_DIRS="$SCRIPT_DIRS $PLUGIN_DIR"
+        done
+    fi
+    echo $SCRIPT_DIRS
+}
+
+_grailsscripts() {
+    for D in $(_grailsscriptdirs); do
+        if [ -d $D ]
+            then ls -1 $D/*.groovy | sed -E 's/(.*)\/(.*)\.groovy/\2/' | sed -E 's/([A-Z])/-\1/g' | sed -E 's/^-//' | tr "[:upper:]" "[:lower:]"
+        fi
+    done | sort | uniq | grep -vE "^_"
+}
+
+_grails() {
+    if (( CURRENT == 2 )); then
+        scripts=( $(_grailsscripts) )
+        _multi_parts / scripts
+    else
+        _files
+    fi
+}
+
+compdef _grails grails

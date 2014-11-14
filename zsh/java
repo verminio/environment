@@ -1,0 +1,7 @@
+export JAVA_HOME=/usr/java/latest
+
+export ECLIPSE_HOME=$PROGRAMS_HOME/eclipse
+
+export MAVEN_HOME=$PROGRAMS_HOME/apache-maven/default
+
+export PATH=$ECLIPSE_HOME:$PATH

@@ -1,0 +1,7 @@
+alias l="ls -al"
+alias psx="ps -ef | grep"
+alias tl="cd /var/log"
+alias td="cd $HOME/Downloads"
+alias te="cd $HOME/.environment"
+alias tp="cd $HOME/Programs"
+alias tw="cd $HOME/Work"
