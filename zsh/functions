@@ -1,0 +1,7 @@
+function precmd() {
+    print -Pn "\e]0;%n@%m: %~\a"
+}
+
+function prepw() {
+    print -Pn "%n@%m"
+}
