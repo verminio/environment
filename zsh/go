@@ -1,1 +1,4 @@
-export GOPATH=$HOME/Work/gospace
+export GOROOT=$HOME/Programs/go
+export GOPATH=$HOME/Work/go
+
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin

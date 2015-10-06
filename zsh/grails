@@ -1,4 +1,4 @@
 export GRAILS_VERSION="2.4.4"
-export GRAILS_HOME=$PROGRAMS_HOME/grails/default
+export GRAILS_HOME=$PROGRAMS_ROOT/grails/default
 
 export PATH=$GRAILS_HOME/bin:$PATH
