@@ -150,4 +150,5 @@ bar {
 }
 
 exec --no-startup-id feh --bg-scale $HOME/.environment/wallpapers/bunnies.jpg
+exec --no-startup-id nm-applet
 exec dunst &

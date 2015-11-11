@@ -14,3 +14,5 @@ URxvt*shading: 15
 ! Scrollbar
 URxvt*scrollstyle: xterm
 URxvt*scrollBar_right: true
+
+URxvt*font: xft:Hack:size=8
