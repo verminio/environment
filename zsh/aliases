@@ -1,4 +1,8 @@
-alias l="ls -al"
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias ls='ls --color=auto'
+alias l='ls -alF'
 alias psx="ps -ef | grep"
 alias tl="cd /var/log"
 alias td="cd $HOME/Downloads"
