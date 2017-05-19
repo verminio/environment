@@ -4,8 +4,10 @@ alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 alias l='ls -alF'
 alias psx="ps -ef | grep"
+
+# Locations
 alias tl="cd /var/log"
-alias td="cd $HOME/Downloads"
-alias te="cd $ENV_ROOT"
-alias tp="cd $PROGRAMS_ROOT"
-alias tw="cd $HOME/Work"
+alias td="cd \$DOWNLOADS"
+alias te="cd \$ENV_ROOT"
+alias tp="cd \$PROGRAMS_ROOT"
+alias tw="cd \$WORK_ROOT"

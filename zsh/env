@@ -1,3 +1,7 @@
-export PROGRAMS_ROOT=$HOME/Programs
 export EDITOR="vi"
 export PROMPT="%n@%m:%~/ >"
+
+# Locations
+export PROGRAMS_ROOT=~/Programs
+export WORK_ROOT=~/Work
+export DOWNLOADS=~/Downloads
