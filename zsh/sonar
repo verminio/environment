@@ -1,0 +1,4 @@
+export SONARQUBE_HOME=$PROGRAMS_ROOT/sonarqube
+export SONARSCANNER_HOME=$PROGRAMS_ROOT/sonar-scanner
+
+export PATH=$PATH:$SONARQUBE_HOME/bin/linux-x86-64:$SONARSCANNER_HOME/bin
